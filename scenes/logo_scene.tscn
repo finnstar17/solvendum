@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://tvu1a58xqipe"]
+
+[ext_resource type="Script" uid="uid://bt1dr86584lvt" path="res://scripts/animated_logo.gd" id="1_n2fsp"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_s5spb"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_n2fsp"]
+sky_material = SubResource("ProceduralSkyMaterial_s5spb")
+
+[sub_resource type="Environment" id="Environment_6f7kx"]
+background_mode = 1
+sky = SubResource("Sky_n2fsp")
+tonemap_mode = 2
+adjustment_enabled = true
+adjustment_contrast = 2.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ua8i7"]
+
+[node name="LogoScene" type="Node3D" unique_id=295270839]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=12614090]
+environment = SubResource("Environment_6f7kx")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=225880135]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.7071068, 0, -0.7071068, 0.70710677, 0, 2, 0)
+light_energy = 4.0
+spot_range = 4.0
+spot_attenuation = 0.5
+spot_angle = 30.0
+
+[node name="AnimatedLogo" type="Node3D" parent="." unique_id=1000895241]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 0, 0, -4)
+script = ExtResource("1_n2fsp")
+
+[node name="TopMesh" type="MeshInstance3D" parent="AnimatedLogo" unique_id=448712163]
+transform = Transform3D(4, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 0, 0)
+mesh = SubResource("BoxMesh_ua8i7")
+
+[node name="Diagonal" type="MeshInstance3D" parent="AnimatedLogo" unique_id=656086523]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 0, 0)
+mesh = SubResource("BoxMesh_ua8i7")
+
+[node name="BottomMesh" type="MeshInstance3D" parent="AnimatedLogo" unique_id=1949725165]
+transform = Transform3D(4, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 0, 0)
+mesh = SubResource("BoxMesh_ua8i7")
