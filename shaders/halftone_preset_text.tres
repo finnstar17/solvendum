@@ -1,15 +1,15 @@
-[gd_resource type="ShaderMaterial" format=3 uid="uid://bt2hiylpsscn5"]
+[gd_resource type="ShaderMaterial" format=3 uid="uid://jrgrk18ctscx"]
 
-[ext_resource type="Shader" uid="uid://b22tpww5qw52g" path="res://scripts/halftones.gdshader" id="1_rd5r5"]
+[ext_resource type="Shader" uid="uid://b22tpww5qw52g" path="res://scripts/halftones.gdshader" id="1_mqfsf"]
 
 [resource]
-shader = ExtResource("1_rd5r5")
+shader = ExtResource("1_mqfsf")
 shader_parameter/enabled = true
-shader_parameter/dot_scale = 0.10000000405148
+shader_parameter/dot_scale = 0.20000000880148
 shader_parameter/contrast = 1.00000004424012
 shader_parameter/brightness = 4.7499999933364734e-08
 shader_parameter/threshold = 0.0
 shader_parameter/smoothness = 0.30000001192093
 shader_parameter/color_separation = 0.0
-shader_parameter/texture_size = Vector2(1024, 1024)
+shader_parameter/texture_size = Vector2(1024, 512)
 shader_parameter/warm_tint = Color(1, 1, 1, 1)

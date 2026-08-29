@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://d3itaxmnloct0"
-path="res://.godot/imported/The Laker.otf-3eba2b466a2a8f5d4929e56f68e0917f.fontdata"
+uid="uid://cuu6t0m833ol3"
+path="res://.godot/imported/Highstar.otf-6cf7bce7aaf26ba7ab2086de7be2673c.fontdata"
 
 [deps]
 
-source_file="res://fonts/the-laker/The Laker.otf"
-dest_files=["res://.godot/imported/The Laker.otf-3eba2b466a2a8f5d4929e56f68e0917f.fontdata"]
+source_file="res://fonts/highstar/Highstar.otf"
+dest_files=["res://.godot/imported/Highstar.otf-6cf7bce7aaf26ba7ab2086de7be2673c.fontdata"]
 
 [params]
 

@@ -1,6 +1,6 @@
 shader_type canvas_item;
 
-render_mode blend_add; 
+render_mode blend_mix; 
 
 uniform bool enabled = true;
 uniform float dot_scale : hint_range(0.01, 1.0) = 0.5;
